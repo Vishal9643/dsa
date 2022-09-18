@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Linear Search</title>
+    <script>
+        let arr = [0,1, 1, 2, 6, 56, 90, 87, 09, 6, 4, 8, 9, 6, 8, 45, 6, 3];
+        function linearSearch() {
+            let searchValue = document.getElementById('search').value;
+            searchValue=parseInt(searchValue);
+            if (typeof parseInt('searchValue') == 'number') {
+                // for (i = 0; i < arr.length; i++) {
+                //     if (arr[i] == searchValue) {
+                //         console.log(`${searchValue} is present at ${i} position`);
+                    
+                //     }
+                // }
+                
+                // console.log("value not present")
+
+                console.log(arr.indexOf(searchValue));
+            } else {
+                alert("please enter a valid number");
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="search" placeholder="enter value to search">
+    <button onclick="linearSearch()">Search</button>
+
+</body>
+
+</html>
