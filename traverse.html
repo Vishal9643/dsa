@@ -11,7 +11,7 @@
     
     function getElement(){
         let el= document.getElementById('element').value
-        if(el<data.length){
+        if(el<data.length && typeof parseInt(el)=='number' && el==Math.abs(el)){
             alert(data[el]);
         }else{
             alert("please write a valid number");

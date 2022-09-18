@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Insert Element</title>
+    <script>
+        function insertElement() {
+            let arr = [0, 1, 2, 3, 4, 5];
+            let el = document.getElementById('element').value;
+            let pos = document.getElementById('position').value;
+            console.log(arr);
+            if (typeof parseInt(el) == 'number' && pos == Math.abs(pos) && pos <= arr.length) {
+
+                // for (i = arr.length - 1; i >= 0; i--) {
+                //     if (i >= pos) {
+                //         arr[i + 1] = arr[i];
+                //         if (i == pos) {
+                //             arr[i] = el;
+                //         }
+                //     }
+                // }
+                // // arr[pos-1]=el;
+                
+                // // console.log(arr.sort());
+
+                arr.splice(pos,0,el)
+                console.log(arr);
+            } else {
+                alert('please enter a valid number and position');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="element" placeholder="Enter the number to insert">
+    <input type="text" id="position" placeholder="Enter the position">
+    <button onclick="insertElement()">Insert Element</button>
+</body>
+
+</html>
