@@ -1,2 +1,1 @@
-# dsa
-Data Structure by Using JavaScript
+#Data Structure by Using JavaScript
