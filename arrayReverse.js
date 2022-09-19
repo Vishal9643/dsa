@@ -1,17 +1,16 @@
-let arr= [1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0];
-let temp;
-let start=0;
-let end=arr.length-1;
+let arr=[0,1,2,3,4,5,6,7,8,9]
+// let start=0,end=arr.length-1,temp;
 
-const reverseArr=(arr,start,end)=> {
-    if(start<=end){
-        temp=arr[end];
-        arr[end]=arr[start];
-        arr[start]=temp;
-        reverseArr(arr,start+1,end-1);
-    
-    }
-   return(arr);
-}
+// const reverseArray=(arr,start,end)=> {
+//     if(start<=end){
+//         temp=arr[end];
+//         arr[end]=arr[start];
+//         arr[start]=temp;
+//         reverseArray(arr,start+1,end-1);
+//     }
+//     return(arr);
+// }
 
-console.log(reverseArr(arr,start,end));
+// console.log(reverseArray(arr,start,end));
+
+console.log(arr.reverse());
